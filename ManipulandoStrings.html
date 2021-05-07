@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <h2>Manipulando Strings em JS</h2>
+
+    <script>
+
+        document.write('Tamanho: ' + 'Thiago da Costa'.length)
+
+        document.write('<hr>')
+
+        document.write('char "n" na posição: ' + 'Thiago da Costa'.charAt(13))
+
+        document.write('<hr>')
+
+        document.write('Code de "n" na posição: ' + 'Thiago da Costa'.charCodeAt(0))
+
+        document.write('<hr>')
+
+        var nome = 'Mariana da Costa'
+        document.write(nome)
+        document.write('<hr>')
+
+        document.write(nome)
+        document.write(nome.indexOf('d'))
+
+        //sempre que o caracter solicitado não estiver na string o resultado retornado será -1.
+
+        document.write('<hr>')
+
+        document.write(nome.replace('Mariana', 'Rita'))
+        //vai alterar o valor somente para exibição, ver comentário mais abaixo.
+        
+        document.write('<hr>')
+        
+        //observar que o valor da variável nome não foi convertido na memória, aqui ele segue pegando o Valor Mariana da Costa
+        document.write(nome.substring(11,16))
+
+        document.write('<hr>')
+
+
+        var nomeDiFi =  'Rita'
+        document.write(nomeDiFi.toUpperCase())
+        document.write('<br>')
+        document.write(nomeDiFi.toLowerCase())
+
+        document.write('<hr>')
+
+        var nome = '   Thiago da Costa   '
+
+        document.write('*' + nome.trim() + '*')
+
+
+    </script>
+
+</body>
+
+</html>

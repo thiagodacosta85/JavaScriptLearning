@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas If e Else</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+    <h2>Estruturas If e Else</h2>
+
+    <script>
+
+        var maioridade = null
+        var caso1 = 'Maior de idade'
+        var caso2 = 'Menor de idade'
+        var idade = null
+
+        document.write('Informe a idade a ser verificada: ')
+        var idade = prompt('Digite a idade aqui: ')
+        document.write(idade)
+        document.write("<br>")
+
+        if (idade >= 18)
+            document.write(caso1)
+        else
+            document.write(caso2)
+    </script>
+
+    <h2>Operadores de comparação:</h2>
+    Igual       (==)  -> verifica se os valores comparados são iguais<br>
+    Igual       (===) -> verifica se os valores comparados são iguais e do mesmo tipo<br>
+    Diferente   (!==) -> verifica se os valores comparados são diferentes e de tipos diferentes<br>
+    Menor       ( < )   -> verifica se os valor é menor<br>
+    Maior       ( > )   -> verifica se os valor é maior<br>
+    Menor igual ( <= )   -> verifica se os valor é menor<br>
+    Maior igual ( >= )   -> verifica se os valor é maior<br>
+</body>
+</html>
