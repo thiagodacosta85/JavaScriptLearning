@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/game.js"></script>
+</head>
+
+<body onresize="adjustScreenGameSize()">
+
+    <div class="panel">
+        <div class="lifes">
+            <img id="heart1" src="imgs/heartFull.png" />
+            <img id="heart2" src="imgs/heartFull.png" />
+            <img id="heart3" src="imgs/heartFull.png" />
+        </div>
+
+        <div class="chronometer">Tempo restante: <span id="chrono"></span></div>
+
+
+    </div>
+
+    <script>
+
+        document.getElementById('chrono').innerHTML = time
+
+        var createGnat = setInterval(function () {
+            randomicPosition()
+        }, bornGnatTime)
+    </script>
+
+</body>
+
+</html>
